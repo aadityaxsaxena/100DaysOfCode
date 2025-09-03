@@ -1,7 +1,6 @@
 //Q23 Write a program to calculate a library fine based on late days.
 
 #include <stdio.h>
-
 int main() {
     int late_days;
     double fine = 0.0;
@@ -17,10 +16,10 @@ int main() {
         fine = late_days * 2.0;
         printf("The fine is: Rs.%.2f\n", fine);
     } else if (late_days <= 10) {         
-        fine = late_days * 4.0;
+        fine = ((late_days * 2) + late_days - 5 * 4.0);
         printf("The fine is: Rs.%.2f\n", fine);
     } else if (late_days <= 30) {         
-        fine = late_days * 6.0;
+        fine = ((late_days * 2) + (late_days - 5) * 6.0);
         printf("The fine is: Rs.%.2f\n", fine);
     } else {
         printf("Membership cancelled due to excessive late returns.\n");
